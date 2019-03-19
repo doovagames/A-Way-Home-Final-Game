@@ -5,8 +5,8 @@ using UnityEngine.Serialization;
 
 public class BoatMovement : MonoBehaviour
 {
-    [SerializeField] private float turnSpeed = 1000f;
-    [SerializeField] private float accellerateSpeed = 1000f;
+    [SerializeField] private float turnSpeed = 10f;
+    [SerializeField] private float accellerateSpeed = 10f;
 
     [SerializeField] private Rigidbody rbody;
 
