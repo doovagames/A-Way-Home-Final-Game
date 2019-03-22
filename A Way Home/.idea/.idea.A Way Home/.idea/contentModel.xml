@@ -9,6 +9,7 @@
           <e p="Gravity" t="Include">
             <e p="AddForce.cs" t="Include" />
             <e p="AddTorque.cs" t="Include" />
+            <e p="PlanarGravity.cs" t="Include" />
           </e>
           <e p="Main Menu" t="Include">
             <e p="LoadScene.cs" t="Include" />
