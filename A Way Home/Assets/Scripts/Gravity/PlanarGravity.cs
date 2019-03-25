@@ -11,11 +11,13 @@ public class PlanarGravity : MonoBehaviour
     public Color _gizmosColor = Color.red;
 
     private Vector3 _targetDirection;
-    
+    private Rigidbody rigidbody1;
+
     // Start is called before the first frame update
     void Start()
     {
-      Physics.gravity = Vector3.zero;  
+        rigidbody1 = GetComponent<Rigidbody>();
+        Physics.gravity = Vector3.zero;
     }
 
     // Update is called once per frame
@@ -23,18 +25,19 @@ public class PlanarGravity : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, _planetTarget.position);
 
-        _targetDirection = transform.position - _planetTarget.position;
+        _targetDirection = _planetTarget.position - transform.position ;
         _targetDirection = _targetDirection.normalized;
 
         if (distance < _gravityRadius)
         {
-            GetComponent<Rigidbody>().AddForce(_targetDirection * _forceAmount * Time.deltaTime);
+            rigidbody1.AddForce(_targetDirection * _forceAmount * Time.deltaTime);
         }
     }
 
-    void OnGizmosDraw()
+    private void OnDrawGizmos()
     {
         Gizmos.color = _gizmosColor;
         Gizmos.DrawWireSphere(_planetTarget.position, _gravityRadius);
     }
+
 }
