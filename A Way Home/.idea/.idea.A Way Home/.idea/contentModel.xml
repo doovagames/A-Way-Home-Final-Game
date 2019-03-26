@@ -37,7 +37,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Camera" t="Include">
-            <e p="FieldofView.cs" t="Include" />
             <e p="SmoothCameraFollow.cs" t="Include" />
           </e>
           <e p="Gravity" t="Include">

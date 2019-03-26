@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+[RequireComponent(typeof(Rigidbody))]
 public class BoatMovement : MonoBehaviour
 {
     [SerializeField] private float turnSpeed = 10f;
@@ -21,6 +22,8 @@ public class BoatMovement : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        
+        
 
         rbody.AddTorque(0f, h * turnSpeed * Time.deltaTime, 0f);
         rbody.AddForce(transform.forward * v * accellerateSpeed * Time.deltaTime);

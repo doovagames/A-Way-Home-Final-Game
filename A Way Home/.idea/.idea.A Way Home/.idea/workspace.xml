@@ -12,60 +12,76 @@
     <session id="-1172313051">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="1" />
+          <entry key="cs" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="1" />
+          <entry key="C#" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="80" />
+          <entry key="cs" value="833" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="80" />
+          <entry key="C#" value="833" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="425">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
               <folding>
-                <marker date="1553523355738" expanded="false" signature="6:78" ph="..." />
-                <marker date="1553523355738" expanded="true" signature="161:1175" ph="{...}" />
-                <marker date="1553523355738" expanded="true" signature="291:368" ph="{...}" />
-                <marker date="1553523355738" expanded="true" signature="378:659" ph="/* &lt;summary&gt; ... */" />
-                <marker date="1553523355738" expanded="true" signature="703:1173" ph="{...}" />
-                <marker date="1553523355738" expanded="true" signature="745:1167" ph="{...}" />
+                <marker date="1553613933307" expanded="false" signature="6:78" ph="..." />
+                <marker date="1553613933307" expanded="true" signature="161:1610" ph="{...}" />
+                <marker date="1553613933307" expanded="true" signature="477:554" ph="{...}" />
+                <marker date="1553613933307" expanded="true" signature="560:841" ph="/* &lt;summary&gt; ... */" />
+                <marker date="1553613933307" expanded="true" signature="885:1431" ph="{...}" />
+                <marker date="1553613933307" expanded="true" signature="976:1425" ph="{...}" />
+                <marker date="1553613933307" expanded="true" signature="1455:1608" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="51">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding>
-                <marker date="1553526899011" expanded="false" signature="6:78" ph="..." />
-                <marker date="1553526899011" expanded="true" signature="120:204" ph="{...}" />
-                <marker date="1553526899011" expanded="true" signature="181:202" ph="{...}" />
+                <marker date="1553614662892" expanded="false" signature="6:111" ph="..." />
+                <marker date="1553614662892" expanded="true" signature="192:809" ph="{...}" />
+                <marker date="1553614662892" expanded="true" signature="423:478" ph="{...}" />
+                <marker date="1553614662892" expanded="true" signature="536:807" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <marker date="1553615982483" expanded="false" signature="6:78" ph="..." />
+                <marker date="1553615982483" expanded="true" signature="127:516" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -87,7 +103,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/AddForce.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/AddTorque.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/PlanarGravity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,18 +110,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/ParralaxBackground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoadScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/SelectOnInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/AddForce.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/AddTorque.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Runtime/PostProcessManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/PlanarGravity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" />
       </list>
     </option>
   </component>
@@ -133,10 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -160,6 +171,10 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
     </panes>
   </component>
@@ -215,11 +230,12 @@
       <workItem from="1553268224767" duration="666000" />
       <workItem from="1553513029186" duration="2597000" />
       <workItem from="1553524261560" duration="2734000" />
+      <workItem from="1553610985971" duration="4167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15017000" />
+    <option name="totallyTimeSpent" value="19184000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,7 +249,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -287,27 +303,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/LoadScene.cs" />
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/SelectOnInput.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -322,13 +318,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Runtime/PostProcessManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="423" column="8" lean-forward="true" selection-start-line="423" selection-start-column="8" selection-end-line="423" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Runtime/PostProcessManager.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/AddForce.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -350,28 +340,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="425">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding>
-            <marker date="1553526899011" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553526899011" expanded="true" signature="120:204" ph="{...}" />
-            <marker date="1553526899011" expanded="true" signature="181:202" ph="{...}" />
+            <marker date="1553613933307" expanded="false" signature="6:78" ph="..." />
+            <marker date="1553613933307" expanded="true" signature="161:1610" ph="{...}" />
+            <marker date="1553613933307" expanded="true" signature="477:554" ph="{...}" />
+            <marker date="1553613933307" expanded="true" signature="560:841" ph="/* &lt;summary&gt; ... */" />
+            <marker date="1553613933307" expanded="true" signature="885:1431" ph="{...}" />
+            <marker date="1553613933307" expanded="true" signature="976:1425" ph="{...}" />
+            <marker date="1553613933307" expanded="true" signature="1455:1608" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="51">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding>
-            <marker date="1553523355738" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553523355738" expanded="true" signature="161:1175" ph="{...}" />
-            <marker date="1553523355738" expanded="true" signature="291:368" ph="{...}" />
-            <marker date="1553523355738" expanded="true" signature="378:659" ph="/* &lt;summary&gt; ... */" />
-            <marker date="1553523355738" expanded="true" signature="703:1173" ph="{...}" />
-            <marker date="1553523355738" expanded="true" signature="745:1167" ph="{...}" />
+            <marker date="1553614662892" expanded="false" signature="6:111" ph="..." />
+            <marker date="1553614662892" expanded="true" signature="192:809" ph="{...}" />
+            <marker date="1553614662892" expanded="true" signature="423:478" ph="{...}" />
+            <marker date="1553614662892" expanded="true" signature="536:807" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <marker date="1553615982483" expanded="false" signature="6:78" ph="..." />
+            <marker date="1553615982483" expanded="true" signature="127:516" ph="{...}" />
           </folding>
         </state>
       </provider>

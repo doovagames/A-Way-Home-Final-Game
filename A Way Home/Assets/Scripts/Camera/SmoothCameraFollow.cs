@@ -4,28 +4,11 @@ using UnityEngine;
 
 public class SmoothCameraFollow : MonoBehaviour
 {
-    public Transform _playerTransform;
+    public GameObject _boat; // GameObject to follow
 
-    [SerializeField] private Vector3 _cameraOffset;
+    [SerializeField] private float _distanceOffset = 6.0f; // Distance behind follow object
+    [SerializeField] private float _heightOffset = 2.0f; // Distance above follow object
 
-    [Range(0.01f, 1.0f)] public float _smoothFactor = 1f;
-
-    public bool _lookAtPlayer = false;
-    
-    // Use this for initialization
-    private void Start()
-    {
-        _cameraOffset = transform.position - _playerTransform.position;
-    }
-    
-    // LateUpdate is called after the update methods
-    private void LateUpdate()
-    {
-        Vector3 newPos = _playerTransform.position + _cameraOffset;
-        
-        transform.position = Vector3.Slerp(transform.position, newPos, _smoothFactor);
-
-        if (_lookAtPlayer)
-            transform.LookAt(_playerTransform);
-    }
+    [SerializeField] private float _springConstant = 10.0f; // How hard should the camera try to get to it's ideal position
+    float _dampConstant;
 }
