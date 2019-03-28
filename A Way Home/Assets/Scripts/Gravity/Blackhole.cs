@@ -38,6 +38,7 @@ public class Blackhole : MonoBehaviour
 
     void OrbitAround()
     {
-        transform.RotateAround(_blackhole.transform.position, Vector3.forward, _speed * Time.deltaTime); // Make boat orbit around blackhole
+        transform.RotateAround(_blackhole.transform.position, Vector3.left, _speed * Time.deltaTime); // Make boat orbit around blackhole
+        transform.RotateAround(_blackhole.transform.position, Vector3.right, _speed * Time.deltaTime); // Make boat orbit around blackhole
     }
 }
