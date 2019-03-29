@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class Blackhole : MonoBehaviour
 {
+    [SerializeField] private float timeMultiplier;
     public GameObject _blackhole; // The blackhole game obj that the boat will orbit around when in it.
-    [SerializeField] private float _speed; // The speed of the orbiting
     
     
     [SerializeField] private float _gravityPull = .78f;
@@ -25,20 +25,13 @@ public class Blackhole : MonoBehaviour
     
     void OnTriggerStay(Collider other)
     {
-        _gravityPull += Time.deltaTime;
+        _gravityPull += Time.deltaTime * timeMultiplier;
         
         if(other.attachedRigidbody)
         {
             float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / _mGravityRadius;
             other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.smoothDeltaTime);
-            OrbitAround();
             Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
         }
-    }
-
-    void OrbitAround()
-    {
-        transform.RotateAround(_blackhole.transform.position, Vector3.left, _speed * Time.deltaTime); // Make boat orbit around blackhole
-        transform.RotateAround(_blackhole.transform.position, Vector3.right, _speed * Time.deltaTime); // Make boat orbit around blackhole
     }
 }

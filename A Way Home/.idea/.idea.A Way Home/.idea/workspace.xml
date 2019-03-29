@@ -8,21 +8,70 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1172313051">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="1104" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="1104" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+            <state relative-caret-position="544">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
-                <marker date="1553773211329" expanded="false" signature="6:78" ph="..." />
-                <marker date="1553773211329" expanded="true" signature="161:1746" ph="{...}" />
-                <marker date="1553773211329" expanded="true" signature="477:554" ph="{...}" />
-                <marker date="1553773211329" expanded="true" signature="560:841" ph="/* &lt;summary&gt; ... */" />
-                <marker date="1553773211329" expanded="true" signature="885:1431" ph="{...}" />
-                <marker date="1553773211329" expanded="true" signature="976:1425" ph="{...}" />
-                <marker date="1553773211329" expanded="true" signature="1455:1744" ph="{...}" />
+                <marker date="1553856153946" expanded="false" signature="6:78" ph="..." />
+                <marker date="1553856153946" expanded="true" signature="161:1402" ph="{...}" />
+                <marker date="1553856153946" expanded="true" signature="456:533" ph="{...}" />
+                <marker date="1553856153946" expanded="true" signature="539:820" ph="/* &lt;summary&gt; ... */" />
+                <marker date="1553856153946" expanded="true" signature="864:1400" ph="{...}" />
+                <marker date="1553856153946" expanded="true" signature="972:1394" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/PlanetGravity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" column="93" selection-start-line="28" selection-start-column="93" selection-end-line="28" selection-end-column="93" />
+              <folding>
+                <marker date="1553852878024" expanded="false" signature="6:78" ph="..." />
+                <marker date="1553852878024" expanded="true" signature="122:2008" ph="{...}" />
+                <marker date="1553852878024" expanded="true" signature="527:2006" ph="{...}" />
+                <marker date="1553852878024" expanded="true" signature="645:1765" ph="{...}" />
+                <marker date="1553852878024" expanded="true" signature="758:1755" ph="{...}" />
+                <marker date="1553852878024" expanded="true" signature="889:1741" ph="{...}" />
+                <marker date="1553852878024" expanded="true" signature="1470:1646" ph="/* Debug values for checking the force ... */" />
+                <marker date="1553852878024" expanded="true" signature="1851:2000" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -34,10 +83,10 @@
             <state relative-caret-position="391">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <marker date="1553772039830" expanded="false" signature="6:111" ph="..." />
-                <marker date="1553772039830" expanded="true" signature="192:814" ph="{...}" />
-                <marker date="1553772039830" expanded="true" signature="423:478" ph="{...}" />
-                <marker date="1553772039830" expanded="true" signature="541:812" ph="{...}" />
+                <marker date="1553851167596" expanded="false" signature="6:111" ph="..." />
+                <marker date="1553851167596" expanded="true" signature="192:814" ph="{...}" />
+                <marker date="1553851167596" expanded="true" signature="423:478" ph="{...}" />
+                <marker date="1553851167596" expanded="true" signature="541:812" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -46,14 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-              <folding>
-                <marker date="1553772806685" expanded="false" signature="6:115" ph="..." />
-                <marker date="1553772806685" expanded="true" signature="165:2154" ph="{...}" />
-                <marker date="1553772806685" expanded="true" signature="794:950" ph="{...}" />
-                <marker date="1553772806685" expanded="true" signature="1025:2152" ph="{...}" />
-              </folding>
+            <state relative-caret-position="561">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -69,14 +112,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/SelectOnInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/ParralaxBackground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/PlanetGravity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/AddForce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/AddTorque.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/PlanarGravity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/SelectOnInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -92,6 +136,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/PlanetGravity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs" />
       </list>
     </option>
@@ -101,9 +146,15 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1550" />
-    <option name="y" value="-20" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -113,8 +164,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -138,9 +190,8 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,13 +214,11 @@
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <method v="2" />
@@ -200,11 +249,12 @@
       <workItem from="1553610985971" duration="4167000" />
       <workItem from="1553765067226" duration="3709000" />
       <workItem from="1553771924223" duration="1285000" />
+      <workItem from="1553852042908" duration="2151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24178000" />
+    <option name="totallyTimeSpent" value="26329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -216,10 +266,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -239,7 +288,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="14" side_tool="true" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Android Profiler" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Performance Profiler" order="16" />
       <window_info anchor="bottom" id="Logcat" order="17" />
@@ -258,6 +307,9 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -308,44 +360,54 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/FieldofView.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/PlanetGravity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="93" selection-start-line="28" selection-start-column="93" selection-end-line="28" selection-end-column="93" />
+          <folding>
+            <marker date="1553852878024" expanded="false" signature="6:78" ph="..." />
+            <marker date="1553852878024" expanded="true" signature="122:2008" ph="{...}" />
+            <marker date="1553852878024" expanded="true" signature="527:2006" ph="{...}" />
+            <marker date="1553852878024" expanded="true" signature="645:1765" ph="{...}" />
+            <marker date="1553852878024" expanded="true" signature="758:1755" ph="{...}" />
+            <marker date="1553852878024" expanded="true" signature="889:1741" ph="{...}" />
+            <marker date="1553852878024" expanded="true" signature="1470:1646" ph="/* Debug values for checking the force ... */" />
+            <marker date="1553852878024" expanded="true" signature="1851:2000" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <marker date="1553772039830" expanded="false" signature="6:111" ph="..." />
-            <marker date="1553772039830" expanded="true" signature="192:814" ph="{...}" />
-            <marker date="1553772039830" expanded="true" signature="423:478" ph="{...}" />
-            <marker date="1553772039830" expanded="true" signature="541:812" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-          <folding>
-            <marker date="1553772806685" expanded="false" signature="6:115" ph="..." />
-            <marker date="1553772806685" expanded="true" signature="165:2154" ph="{...}" />
-            <marker date="1553772806685" expanded="true" signature="794:950" ph="{...}" />
-            <marker date="1553772806685" expanded="true" signature="1025:2152" ph="{...}" />
+            <marker date="1553851167596" expanded="false" signature="6:111" ph="..." />
+            <marker date="1553851167596" expanded="true" signature="192:814" ph="{...}" />
+            <marker date="1553851167596" expanded="true" signature="423:478" ph="{...}" />
+            <marker date="1553851167596" expanded="true" signature="541:812" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/Blackhole.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+        <state relative-caret-position="544">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
-            <marker date="1553773211329" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553773211329" expanded="true" signature="161:1746" ph="{...}" />
-            <marker date="1553773211329" expanded="true" signature="477:554" ph="{...}" />
-            <marker date="1553773211329" expanded="true" signature="560:841" ph="/* &lt;summary&gt; ... */" />
-            <marker date="1553773211329" expanded="true" signature="885:1431" ph="{...}" />
-            <marker date="1553773211329" expanded="true" signature="976:1425" ph="{...}" />
-            <marker date="1553773211329" expanded="true" signature="1455:1744" ph="{...}" />
+            <marker date="1553856153946" expanded="false" signature="6:78" ph="..." />
+            <marker date="1553856153946" expanded="true" signature="161:1402" ph="{...}" />
+            <marker date="1553856153946" expanded="true" signature="456:533" ph="{...}" />
+            <marker date="1553856153946" expanded="true" signature="539:820" ph="/* &lt;summary&gt; ... */" />
+            <marker date="1553856153946" expanded="true" signature="864:1400" ph="{...}" />
+            <marker date="1553856153946" expanded="true" signature="972:1394" ph="{...}" />
           </folding>
         </state>
       </provider>
