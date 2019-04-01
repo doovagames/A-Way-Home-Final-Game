@@ -1,24 +1,24 @@
 fileFormatVersion: 2
-guid: b2678f3ad067c4640b90a26487eadfd7
+guid: 31b51fa71125a4541976a8a319c42c24
 ModelImporter:
-  serializedVersion: 25
+  serializedVersion: 26
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert3
-    second: {fileID: 2100000, guid: dc8e23107068c2c45807a82d954adfcd, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: blueish stone texture
-    second: {fileID: 2800000, guid: e522c20b6cab01045a7a4e5efd1e8508, type: 3}
+      name: lambert5
+    second: {fileID: 2100000, guid: 54d38d21f707d8b45b815e8cf5920032, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: stone texture normal
-    second: {fileID: 2800000, guid: f21599fd81d258d4ab1123ad9565ff73, type: 3}
+    second: {fileID: 2800000, guid: 9696088fe028e464c8385c219b6c9b5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: stone texture.2
+    second: {fileID: 2800000, guid: f434ef8bccdb41443971a24f04ef5eaa, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -53,6 +53,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

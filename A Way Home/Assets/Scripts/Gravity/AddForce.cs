@@ -14,11 +14,8 @@ public class AddForce : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
             rigidbody.AddRelativeForce(_forceAmount);
-        }
     }
 }

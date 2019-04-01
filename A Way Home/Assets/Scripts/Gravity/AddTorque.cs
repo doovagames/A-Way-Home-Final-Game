@@ -5,18 +5,17 @@ using UnityEngine;
 public class AddTorque : MonoBehaviour
 {
     public Vector3 _torqueAmount;
-    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private Rigidbody _rigidbody;
     
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody.GetComponent<Rigidbody>();
+        _rigidbody.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-            rigidbody.AddTorque(_torqueAmount);
+            _rigidbody.AddTorque(_torqueAmount);
     }
 }
