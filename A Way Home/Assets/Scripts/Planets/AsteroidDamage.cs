@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class AsteroidDamage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int damage;
+    
+    private void OnCollisionEnter(Collision col)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (col.gameObject.tag == "Player")
+        {
+            col.gameObject.GetComponentInParent<BoatHealth>().Damage(damage);
+        }
     }
 }
