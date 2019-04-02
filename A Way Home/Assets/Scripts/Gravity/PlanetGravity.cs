@@ -26,8 +26,6 @@ public class PlanetGravity : MonoBehaviour
                     Vector3 _directionForce = (_generators[ii].position - _affected[jj].position) / _distance;
                     float _forceValue = (_generators[ii].mass * _affected[jj].mass) / Mathf.Pow(_distance, 2);
                     
-                    Debug.Log("Force " +_generators[ii].name+"-->" + _affected[jj].name+" value = "+_forceValue);
-                    
                     /* Debug values for checking the force
                      Debug.Log (Distance)
                      Debug.Log (_directionForce)

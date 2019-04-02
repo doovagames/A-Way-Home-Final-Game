@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb33026aa0a47b4aab4ff6f3c0f4773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomRange: {x: 1, y: 10}
 --- !u!1001 &944802880001121738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,7 +81,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: b552b993d8bd08046ac9e89a3a0262c5,
         type: 3}
       propertyPath: m_Name
-      value: Asteroid_5
+      value: Asteroid_5 Variant
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b552b993d8bd08046ac9e89a3a0262c5,
         type: 3}

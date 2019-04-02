@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 public class BoatMovement : MonoBehaviour
 {
     [SerializeField] private float turnSpeed = 10f;
-    [SerializeField] private float accellerateSpeed = 10f;
+    [SerializeField] private float acceleration = 10f;
 
     [SerializeField] private Rigidbody rbody;
 
@@ -20,12 +20,21 @@ public class BoatMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        
-        
+        float forwardForce = 0;
+        float directionalForce = 0;
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            directionalForce = -1f;
+            forwardForce = 1;
+        }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            directionalForce = 1f;
+            forwardForce = 1;
+        }
+        rbody.AddForce(transform.forward * forwardForce * acceleration * Time.deltaTime);
+        // rbody.transform.Rotate(new Vector3(0,directionalForce * turnSpeed,0));
+        rbody.AddTorque(0f, directionalForce * turnSpeed * Time.deltaTime, 0f);
 
-        rbody.AddTorque(0f, h * turnSpeed * Time.deltaTime, 0f);
-        rbody.AddForce(transform.forward * v * accellerateSpeed * Time.deltaTime);
     }
 }
