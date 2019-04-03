@@ -1,18 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class BoatHealth : MonoBehaviour
 {
     [SerializeField] private int _curHealth;
     [SerializeField] private int _maxHealth = 100;
+    [SerializeField] private Sprite[] _healthBar;
+
+    [SerializeField] private Image _Health;
+
+    [SerializeField] private Player _boat;
+    
+    
     
     // Start is called before the first frame update
     void Start()
     {
         _curHealth = _maxHealth;
+        _boat = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -22,6 +29,8 @@ public class BoatHealth : MonoBehaviour
         {
             _curHealth = _maxHealth;
         }
+
+        _Health.sprite = _healthBar[_boat._curHealth];
 
         if (_curHealth <= 0)
         {

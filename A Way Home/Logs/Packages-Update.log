@@ -119,3 +119,15 @@ The following packages were removed:
   com.unity.2d.sprite@1.0.0
   com.unity.2d.tilemap@1.0.0
   com.unity.modules.androidjni@1.0.0
+
+=== Wed Apr  3 09:13:57 2019
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.2d.tilemap@1.0.0
+  com.unity.2d.sprite@1.0.0
+  com.unity.modules.androidjni@1.0.0
+The following packages were updated:
+  com.unity.package-manager-ui from version 2.1.1 to 2.2.0
