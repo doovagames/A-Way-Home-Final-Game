@@ -11,7 +11,7 @@ public class BoatHealth : MonoBehaviour
 
     [SerializeField] private Image _Health;
 
-    [SerializeField] private Player _boat;
+    [SerializeField] private GameObject _boat;
     
     
     
@@ -19,7 +19,6 @@ public class BoatHealth : MonoBehaviour
     void Start()
     {
         _curHealth = _maxHealth;
-        _boat = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -30,7 +29,7 @@ public class BoatHealth : MonoBehaviour
             _curHealth = _maxHealth;
         }
 
-        _Health.sprite = _healthBar[_boat._curHealth];
+        _Health.sprite = _healthBar[_boat.GetComponent<BoatHealth>()._curHealth];
 
         if (_curHealth <= 0)
         {
