@@ -5,7 +5,7 @@ using UnityEngine;
 public class ParralaxBackground : MonoBehaviour
 {
     [SerializeField] private float _scrollSpeed = 10f;
-    [SerializeField] private Vector2 _startPos;
+    [SerializeField] private Vector3 _startPos;
 
 
     void Start()
@@ -16,6 +16,6 @@ public class ParralaxBackground : MonoBehaviour
     private void Update()
     {
         float newPos = Mathf.Repeat(Time.time * _scrollSpeed, 1000);
-        transform.position = _startPos + Vector2.right * newPos;
+        transform.position = _startPos + Vector3.right * newPos;
     }
 }
