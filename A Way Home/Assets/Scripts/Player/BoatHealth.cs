@@ -9,7 +9,6 @@ public class BoatHealth : MonoBehaviour
     [SerializeField] private int _maxHealth = 100;
     [SerializeField] private Sprite[] _healthBar;
 
-    [SerializeField] private Image _Health;
 
     [SerializeField] private GameObject _boat;
     
@@ -28,8 +27,6 @@ public class BoatHealth : MonoBehaviour
         {
             _curHealth = _maxHealth;
         }
-
-        _Health.sprite = _healthBar[_boat.GetComponent<BoatHealth>()._curHealth];
 
         if (_curHealth <= 0)
         {
