@@ -10,11 +10,14 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private float acceleration = 10f;
 
     [SerializeField] private Rigidbody rbody;
+    //[SerializeField] private AudioSource _source;
 
     // Start is called before the first frame update
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
+        //_source = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -36,5 +39,13 @@ public class BoatMovement : MonoBehaviour
         // rbody.transform.Rotate(new Vector3(0,directionalForce * turnSpeed,0));
         rbody.AddTorque(0f, directionalForce * turnSpeed * Time.deltaTime, 0f);
 
+        StartCoroutine(Movement());
+    }
+
+    IEnumerator Movement()
+    {
+        print(Time.time);
+        yield return new WaitForSeconds(5);
+        print(Time.time);
     }
 }
