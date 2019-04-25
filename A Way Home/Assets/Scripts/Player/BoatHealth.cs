@@ -7,6 +7,7 @@ public class BoatHealth : MonoBehaviour
 {
     public int _curHealth;
     public int _maxHealth = 100;
+    public Light _boatLight;
 
 
     [SerializeField] private GameObject _boat;
@@ -28,6 +29,8 @@ public class BoatHealth : MonoBehaviour
             _curHealth = _maxHealth;
         }
 
+        _boatLight.intensity = (float)_curHealth / _maxHealth;
+        
         if (_curHealth <= 0)
         {
             Die();

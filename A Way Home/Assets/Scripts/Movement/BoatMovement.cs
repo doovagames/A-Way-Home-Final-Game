@@ -12,14 +12,12 @@ public class BoatMovement : MonoBehaviour
 
     [SerializeField] private Rigidbody rbody;
     private float _timeHeld;
-    //[SerializeField] private AudioSource _source;
+    [SerializeField] private AudioSource _source;
 
     // Start is called before the first frame update
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
-        //_source = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -33,11 +31,13 @@ public class BoatMovement : MonoBehaviour
             
             if (Input.GetKey(KeyCode.Mouse0) && _timeHeld < holdTime)
             {
+                _source.Play();
                 directionalForce = -1f;
                 forwardForce = 1;
             }
             if (Input.GetKey(KeyCode.Mouse1) && _timeHeld < holdTime)
             {
+                _source.Play();
                 directionalForce = 1f;
                 forwardForce = 1;
             }
