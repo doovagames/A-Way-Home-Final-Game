@@ -4,29 +4,26 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
-    private AudioSource source;
-    public AudioClip _powerUp;
+    [SerializeField]
+    private BoatHealth _boatHealth;
+    [SerializeField] private AudioSource source;
     
     public int _addHealth = 15;
 
-    private void Awake()
-    {
-        source = GetComponent<AudioSource>();
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("HealthPickup"))
         {
-            source.PlayOneShot(_powerUp, 1F);
+            source.Play();
             Pickup(other);
-            
+            Debug.Log("collide");
         }
     }
 
-    public void Pickup(Collider player)
+    public void Pickup(Collider pickup)
     {
-        source.PlayOneShot(_powerUp, 1F);
-        Destroy(gameObject);
+        _boatHealth._curHealth += _addHealth;
+        
+        Destroy(pickup.gameObject);
     }
 }

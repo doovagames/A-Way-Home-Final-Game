@@ -7,20 +7,17 @@ public class BoatHealth : MonoBehaviour
 {
     public int _curHealth;
     public int _maxHealth = 100;
-    [SerializeField] private Sprite[] _healthBar;
 
 
     [SerializeField] private GameObject _boat;
     
-    public AudioSource _source;
-    public AudioClip _death;
+    [SerializeField] private AudioSource _source;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        _curHealth = _maxHealth;
-        _source = GetComponent<AudioSource>();
+        //_curHealth = _maxHealth;
     }
 
     // Update is called once per frame
@@ -39,7 +36,7 @@ public class BoatHealth : MonoBehaviour
 
     void Die()
     {
-        _source.PlayOneShot(_death);
+        _source.Play();
         
         Destroy(_boat);
         

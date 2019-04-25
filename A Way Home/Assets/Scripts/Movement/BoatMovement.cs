@@ -6,10 +6,12 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody))]
 public class BoatMovement : MonoBehaviour
 {
+    [SerializeField] private float holdTime = .3f;
     [SerializeField] private float turnSpeed = 10f;
     [SerializeField] private float acceleration = 10f;
 
     [SerializeField] private Rigidbody rbody;
+    private float _timeHeld;
     //[SerializeField] private AudioSource _source;
 
     // Start is called before the first frame update
@@ -25,15 +27,26 @@ public class BoatMovement : MonoBehaviour
     {
         float forwardForce = 0;
         float directionalForce = 0;
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1))
         {
-            directionalForce = -1f;
-            forwardForce = 1;
+            _timeHeld += Time.deltaTime;
+            
+            if (Input.GetKey(KeyCode.Mouse0) && _timeHeld < holdTime)
+            {
+                directionalForce = -1f;
+                forwardForce = 1;
+            }
+            if (Input.GetKey(KeyCode.Mouse1) && _timeHeld < holdTime)
+            {
+                directionalForce = 1f;
+                forwardForce = 1;
+            }
+            print(directionalForce);
         }
-        if (Input.GetKey(KeyCode.Mouse1))
+        else
         {
-            directionalForce = 1f;
-            forwardForce = 1;
+            _timeHeld = 0;
+            
         }
         rbody.AddForce(transform.forward * forwardForce * acceleration * Time.deltaTime);
         // rbody.transform.Rotate(new Vector3(0,directionalForce * turnSpeed,0));
@@ -44,8 +57,8 @@ public class BoatMovement : MonoBehaviour
 
     IEnumerator Movement()
     {
-        print(Time.time);
+        //print(Time.time);
         yield return new WaitForSeconds(5);
-        print(Time.time);
+        //print(Time.time);
     }
 }
