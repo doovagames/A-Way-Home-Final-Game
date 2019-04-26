@@ -7,10 +7,17 @@ public class Blackhole : MonoBehaviour
 {
     [SerializeField] private float timeMultiplier;
     public GameObject _blackhole; // The blackhole game obj that the boat will orbit around when in it.
+
+    public ParticleSystem _Blackhole;
     
     
     [SerializeField] private float _gravityPull = .78f;
     public static float _mGravityRadius = 1f;
+
+    private void Start()
+    {
+        _Blackhole.Stop();
+    }
 
     private void Awake()
     {
@@ -25,6 +32,7 @@ public class Blackhole : MonoBehaviour
     
     void OnTriggerStay(Collider other)
     {
+        _Blackhole.Play();
         _gravityPull += Time.deltaTime * timeMultiplier;
         
         if(other.attachedRigidbody)
