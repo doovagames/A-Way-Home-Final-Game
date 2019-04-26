@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class BoatHealth : MonoBehaviour
 {
-    public int _curHealth;
-    public int _maxHealth = 100;
+    public float _curHealth;
+    public float _maxHealth = 200;
     public Light _boatLight;
 
 
@@ -18,7 +18,7 @@ public class BoatHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //_curHealth = _maxHealth;
+        _curHealth = _maxHealth;
     }
 
     // Update is called once per frame
@@ -29,9 +29,9 @@ public class BoatHealth : MonoBehaviour
             _curHealth = _maxHealth;
         }
 
-        _boatLight.intensity = (float)_curHealth / _maxHealth;
+        _boatLight.intensity = _curHealth / 100;
         
-        if (_curHealth <= 0)
+        if (_curHealth <= 0f)
         {
             Die();
         }
@@ -48,7 +48,7 @@ public class BoatHealth : MonoBehaviour
         SceneManager.LoadScene("A Way Home Final Game");
     }
 
-    public void Damage(int amount)
+    public void Damage(float amount)
     {
         _curHealth -= amount;
     } 

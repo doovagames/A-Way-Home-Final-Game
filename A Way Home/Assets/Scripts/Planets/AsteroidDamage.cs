@@ -9,7 +9,7 @@ public class AsteroidDamage : MonoBehaviour
         print(col);
         if (col.gameObject.tag == "Player")
         {
-            var damage = Mathf.RoundToInt(Random.Range(1, 10));
+            var damage = Mathf.Round(Random.Range(1f, 10f));
             col.gameObject.GetComponentInParent<BoatHealth>().Damage(damage);
             
         }
