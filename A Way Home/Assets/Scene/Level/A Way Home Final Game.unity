@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 32d67d1878f09ff41a6a0f76eb0edc22, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8a3932232f54205459d4c4d4ddfb6206, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: ef5b0f50817484543891f9bb2a9429f6,
     type: 2}
   m_UseShadowmask: 1
@@ -659,7 +659,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 400000, y: 100, z: 104.74}
+  m_Size: {x: 40000, y: 100, z: 104.74}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &38388919
 Transform:
@@ -687,8 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc0dca827488b34c8f75ad8b791399d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fadeIn: {fileID: 1955855605}
-  _ImageFade: {fileID: 692803830}
+  _animator: {fileID: 1955855605}
 --- !u!1001 &38780920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3244,7 +3243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167168446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.559944, y: 0, z: -610.553}
+  m_LocalPosition: {x: 548, y: 0, z: 5599}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -33675,7 +33674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1955855604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33727,7 +33726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -36750,7 +36749,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -38419,6 +38417,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoatParent
       objectReference: {fileID: 0}
+    - target: {fileID: 3227040069819659833, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 9032925376781493212, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
         type: 3}
       propertyPath: _source
@@ -38427,7 +38431,7 @@ PrefabInstance:
     - target: {fileID: 900009233722971931, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.09
+      value: 548
       objectReference: {fileID: 0}
     - target: {fileID: 900009233722971931, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
         type: 3}
@@ -38437,7 +38441,7 @@ PrefabInstance:
     - target: {fileID: 900009233722971931, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -602
+      value: 5700.7
       objectReference: {fileID: 0}
     - target: {fileID: 900009233722971931, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
         type: 3}

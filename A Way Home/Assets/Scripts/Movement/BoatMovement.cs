@@ -45,7 +45,6 @@ public class BoatMovement : MonoBehaviour
                 directionalForce = 1f;
                 forwardForce = 1;
             }
-            print(directionalForce);
         }
         //Controls for Controller Input
         if (Input.GetAxisRaw("Xbox L2") > 0.8 || Input.GetAxisRaw("Xbox R2") > 0.8)
