@@ -5,6 +5,7 @@ using UnityEngine;
 public class FadeIn : MonoBehaviour
 {
     [SerializeField] private Animator _fadeIn;
+    [SerializeField] private Canvas _ImageFade;
     
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,9 @@ public class FadeIn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _fadeIn.enabled = true;
-        print("_fadeIn.enabled = true");
+        if (other.CompareTag("Player"))
+        {
+            _fadeIn.SetBool("FadeIn", true);
+        }
     }
 }
