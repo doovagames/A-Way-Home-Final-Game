@@ -40,6 +40,12 @@ public class Blackhole : MonoBehaviour
             float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / _mGravityRadius;
             other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.smoothDeltaTime);
             Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
+            
+            if (other.gameObject.tag == "Player")
+            {
+                var damage = Mathf.Round(Random.Range(1f, 40f)); // Deal random range of damage whilst in collider
+                other.gameObject.GetComponentInParent<BoatHealth>().Damage(damage); // Referencing BoatHealth so that boat can be damaged.
+            }
         }
     }
 }

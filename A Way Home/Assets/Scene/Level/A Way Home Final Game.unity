@@ -38488,6 +38488,11 @@ PrefabInstance:
       propertyPath: _source
       value: 
       objectReference: {fileID: 5525162}
+    - target: {fileID: 5076406583891385086, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
+        type: 3}
+      propertyPath: _rbody
+      value: 
+      objectReference: {fileID: 5187684325715661072}
     - target: {fileID: 3227040069819659839, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
         type: 3}
       propertyPath: source

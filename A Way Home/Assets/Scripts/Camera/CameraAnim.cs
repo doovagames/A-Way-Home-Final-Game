@@ -22,4 +22,9 @@ public class CameraAnim : MonoBehaviour
     {
         cameraAnim.SetInteger("CameraIndex",1);
     }
+    
+    public void BackOptionsButton()
+    {
+        cameraAnim.SetInteger("CameraIndex",0);
+    }
 }

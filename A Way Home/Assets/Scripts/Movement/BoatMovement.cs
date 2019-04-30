@@ -10,14 +10,14 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private float turnSpeed = 10f; // How fast the boat turns
     [SerializeField] private float acceleration = 10f; // How fast the boat moves
 
-    [SerializeField] private Rigidbody rbody;
+    [SerializeField] private Rigidbody _rbody;
     private float _timeHeld;
     [SerializeField] private AudioSource _source;
 
     // Start is called before the first frame update
     void Start()
     {
-        rbody = GetComponent<Rigidbody>();
+        _rbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -45,7 +45,16 @@ public class BoatMovement : MonoBehaviour
                 directionalForce = 1f;
                 forwardForce = 1;
             }
+            else
+            {
+                _timeHeld = 0;
+                forwardForce = -1;
+                directionalForce = 0;
+            }
         }
+        
+
+        
         //Controls for Controller Input
         if (Input.GetAxisRaw("Xbox L2") > 0.8 || Input.GetAxisRaw("Xbox R2") > 0.8)
         {
@@ -64,15 +73,15 @@ public class BoatMovement : MonoBehaviour
                 directionalForce = 1f;
                 forwardForce = 1; 
             } 
+            else
+            {
+                _timeHeld = 0;
+                forwardForce = -1;
+                directionalForce = 0;
+            }
         }
-        
-        else
-        {
-            _timeHeld = 0;
-            
-        }
-        rbody.AddForce(transform.forward * forwardForce * acceleration * Time.deltaTime);
+        _rbody.AddForce(transform.forward * forwardForce * acceleration * Time.deltaTime);
         // rbody.transform.Rotate(new Vector3(0,directionalForce * turnSpeed,0));
-        rbody.AddTorque(0f, directionalForce * turnSpeed * Time.deltaTime, 0f);
+        _rbody.AddTorque(0f, directionalForce * turnSpeed * Time.deltaTime, 0f);
     }
 }
