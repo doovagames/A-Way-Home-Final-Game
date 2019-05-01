@@ -11,18 +11,14 @@ public class CameraAnim : MonoBehaviour
     {
         cameraAnim = gameObject.GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
+    // When button is pressed move camera positive value
     public void OptionsButton()
     {
         cameraAnim.SetInteger("CameraIndex",1);
     }
     
+    // When back button pressed move camera negative value
     public void BackOptionsButton()
     {
         cameraAnim.SetInteger("CameraIndex",0);
