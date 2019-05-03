@@ -7,6 +7,8 @@ public class HealthPickup : MonoBehaviour
     [SerializeField]
     private BoatHealth _boatHealth;
     [SerializeField] private AudioSource source;
+
+    [SerializeField] private ParticleSystem _healthPickup;
     
     public int _addHealth = 15;
 
@@ -15,6 +17,7 @@ public class HealthPickup : MonoBehaviour
         if (other.CompareTag("HealthPickup"))
         {
             source.Play();
+            _healthPickup.Play();
             Pickup(other);
             Debug.Log("collide");
         }
@@ -23,7 +26,6 @@ public class HealthPickup : MonoBehaviour
     public void Pickup(Collider pickup)
     {
         _boatHealth._curHealth += _addHealth;
-        
         Destroy(pickup.gameObject);
     }
 }
