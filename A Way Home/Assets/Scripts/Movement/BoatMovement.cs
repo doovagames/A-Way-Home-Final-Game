@@ -6,13 +6,13 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody))]
 public class BoatMovement : MonoBehaviour
 {
-    [SerializeField] private float pressInterval = .3f;
+    [SerializeField] private float pressInterval = .3f; // How long until player can do input.
     [SerializeField] private float turnSpeed = 10f; // How fast the boat turns
     [SerializeField] private float acceleration = 10f; // How fast the boat moves
 
-    [SerializeField] private Rigidbody _rbody;
+    [SerializeField] private Rigidbody _rbody; // Referencing rigidbody that is attached to boat
     private float _timesSincePress;
-    [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioSource _source; // Referencing Audio Source
 
     // Start is called before the first frame update
     void Start()
