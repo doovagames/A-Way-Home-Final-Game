@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
+
 
 [RequireComponent(typeof(Rigidbody))]
 public class BoatMovement : MonoBehaviour
@@ -14,10 +12,15 @@ public class BoatMovement : MonoBehaviour
     private float _timesSincePress;
     [SerializeField] private AudioSource _source; // Referencing Audio Source
 
+    [SerializeField] private Animator _anim;
+    
+    int 
+
     // Start is called before the first frame update
     void Start()
     {
         _rbody = GetComponent<Rigidbody>();
+        _anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
