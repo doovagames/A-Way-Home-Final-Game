@@ -13,14 +13,12 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private AudioSource _source; // Referencing Audio Source
 
     [SerializeField] private Animator _anim;
-    
-    int 
 
     // Start is called before the first frame update
     void Start()
     {
         _rbody = GetComponent<Rigidbody>();
-        _anim = GetComponent<Animator>();
+        _anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -40,6 +38,7 @@ public class BoatMovement : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Mouse0))
             {
+                _anim.SetTrigger("LeftRow");
                 _source.Play();
                 directionalForce = -5f;
                 forwardForce = 5;
@@ -47,6 +46,7 @@ public class BoatMovement : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Mouse1))
             {
+                _anim.SetTrigger("RightRow");
                 _source.Play();
                 directionalForce = 5f;
                 forwardForce = 5;
@@ -59,6 +59,7 @@ public class BoatMovement : MonoBehaviour
 
             if (Input.GetAxisRaw("Xbox L2") > 0.8)
             {
+                _anim.SetTrigger("LeftRow");
                 _source.Play();
                 directionalForce = -1f;
                 forwardForce = 1;
@@ -66,6 +67,7 @@ public class BoatMovement : MonoBehaviour
 
             if (Input.GetAxisRaw("Xbox R2") > 0.8)
             {
+                _anim.SetTrigger("RightRow");
                 _source.Play();
                 directionalForce = 1f;
                 forwardForce = 1;
