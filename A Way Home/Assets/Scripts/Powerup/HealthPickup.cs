@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
-    [SerializeField]
-    private BoatHealth _boatHealth;
+    [SerializeField] private BoatHealth _boatHealth;
     [SerializeField] private AudioSource source;
 
     [SerializeField] private ParticleSystem _healthPickup;

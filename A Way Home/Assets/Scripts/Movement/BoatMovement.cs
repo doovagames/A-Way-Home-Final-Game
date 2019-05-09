@@ -11,7 +11,7 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private Rigidbody _rbody; // Referencing rigidbody that is attached to boat
     private float _timesSincePress;
     [SerializeField] private AudioSource _source; // Referencing Audio Source
-
+    
     [SerializeField] private Animator _anim;
 
     // Start is called before the first frame update
