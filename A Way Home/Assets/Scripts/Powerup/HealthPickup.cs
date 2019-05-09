@@ -22,7 +22,10 @@ public class HealthPickup : MonoBehaviour
         if (other.CompareTag("HealthPickup"))
         {
             source.Play();
-            Pickup(other);
+            if (_boatHealth._curHealth < _boatHealth._maxHealth)
+            {
+                Pickup(other);
+            }
             Debug.Log("collide");
         }
     }
