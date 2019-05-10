@@ -4,25 +4,36 @@ using UnityEngine.PostProcessing;
 
 public class VignetteIncrease : MonoBehaviour
 {
+    [SerializeField] private BoatHealth _boatHealth;
+    
     [SerializeField] private Transform _playerTransform;
-    private float _startX;
-    public PostProcessingProfile _processing;
-
-    [SerializeField] private float vir;
+    public PostProcessingProfile Processing;
     
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        var newSettings = _processing.vignette.settings;
+        var newSettings = Processing.vignette.settings;
         newSettings.intensity = 0;
-        _processing.vignette.settings = newSettings;
-        _startX = _playerTransform.position.x;
+        Processing.vignette.settings = newSettings;
     }
 
-    private void Update()
+    private void OnTriggerExit(Collider other)
     {
-        var vignetteSettings = _processing.vignette.settings;
-        vignetteSettings.intensity = vir;
-        _processing.vignette.settings = vignetteSettings;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            var newSettings = Processing.vignette.settings;
+            newSettings.intensity = 15 * Time.deltaTime;
+            Processing.vignette.settings = newSettings;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            var newSettings = Processing.vignette.settings;
+            newSettings.intensity = 0 * Time.deltaTime;
+            Processing.vignette.settings = newSettings;      
+        }
     }
 }

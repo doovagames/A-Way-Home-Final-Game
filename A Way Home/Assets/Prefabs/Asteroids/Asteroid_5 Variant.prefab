@@ -30,20 +30,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 8850116265518966187, guid: b552b993d8bd08046ac9e89a3a0262c5, type: 3}
---- !u!114 &145527282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7781275553232235244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f551e8c69e10ba4ab79d43930a0047d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _torqueAmount: {x: 2.1, y: 5, z: 1.5}
-  _rigidbody: {fileID: 145527279}
 --- !u!114 &145527281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +44,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _forceAmount: {x: 0, y: 0, z: -2}
   rigidbody: {fileID: 145527279}
+--- !u!114 &145527282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781275553232235244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f551e8c69e10ba4ab79d43930a0047d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _torqueAmount: {x: 2.1, y: 5, z: 1.5}
+  _rigidbody: {fileID: 145527279}
+--- !u!114 &526842027082059483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781275553232235244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb33026aa0a47b4aab4ff6f3c0f4773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1791669547403178981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68,7 +80,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: b552b993d8bd08046ac9e89a3a0262c5,
         type: 3}
       propertyPath: m_Name
-      value: Asteroid_5
+      value: Asteroid_5 Variant
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b552b993d8bd08046ac9e89a3a0262c5,
         type: 3}

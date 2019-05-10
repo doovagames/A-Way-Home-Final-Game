@@ -23,7 +23,7 @@ public class AsteriodSpawner : MonoBehaviour
             var randomAsteroid = _asteroidsPrefabs[randomAsteroidIndex];
 
             var randomSpawnpointIndex = Random.Range(0, _spawnPoints.Length - 1);
-            var randomSavepoint = _spawnPoints[randomAsteroidIndex];
+            var randomSavepoint = _spawnPoints[randomSpawnpointIndex];
 
             var newAsteroid = Instantiate(randomAsteroid, randomSavepoint.position, Quaternion.identity);
             

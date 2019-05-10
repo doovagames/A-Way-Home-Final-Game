@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\A-Way-Home-Final-Game\A Way Home" t="IncludeRecursive">
+    <e p="C:\Users\User\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\User\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_A Way Home.1569535973.00" t="ExcludeRecursive" />
+    <e p="C:\Users\User\Documents\A-Way-Home-Final-Game\A Way Home" t="IncludeRecursive">
       <e p="A Way Home.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -236,7 +238,5 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\hbahemia\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\hbahemia\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
   </component>
 </project>
