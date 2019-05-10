@@ -214,6 +214,10 @@
           <e p="Movement" t="Include">
             <e p="BoatMovement.cs" t="Include" />
           </e>
+          <e p="Music" t="Include">
+            <e p="InGameMusic.cs" t="Include" />
+            <e p="SwitchMusicTrigger.cs" t="Include" />
+          </e>
           <e p="Planets" t="Include">
             <e p="AsteriodSpawner.cs" t="Include" />
             <e p="AsteroidDamage.cs" t="Include" />
