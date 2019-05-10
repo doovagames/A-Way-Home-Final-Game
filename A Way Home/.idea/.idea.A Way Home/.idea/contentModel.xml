@@ -207,6 +207,7 @@
             <e p="LoadScene.cs" t="Include" />
             <e p="ParralaxBackground.cs" t="Include" />
             <e p="QualityManager.cs" t="Include" />
+            <e p="ScreenResolution.cs" t="Include" />
             <e p="SelectOnInput.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
@@ -234,7 +235,7 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\hbahemia\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\hbahemia\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
+    <e p="C:\Users\hbahemia\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hbahemia\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
   </component>
 </project>
