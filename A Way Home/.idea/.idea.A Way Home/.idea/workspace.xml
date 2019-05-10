@@ -8,6 +8,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1172313051">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="45" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+>>>>>>> Stashed changes
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -39,6 +63,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BoatMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,6 +97,21 @@
                 <marker date="1557398720348" expanded="true" signature="546:751" ph="{...}" />
                 <marker date="1557398720348" expanded="true" signature="648:707" ph="{...}" />
                 <marker date="1557398720348" expanded="true" signature="798:932" ph="{...}" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Powerup/HealthPickup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding>
+                <marker date="1557475570793" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557475570793" expanded="true" signature="121:934" ph="{...}" />
+                <marker date="1557475570793" expanded="true" signature="403:445" ph="{...}" />
+                <marker date="1557475570793" expanded="true" signature="494:757" ph="{...}" />
+                <marker date="1557475570793" expanded="true" signature="546:751" ph="{...}" />
+                <marker date="1557475570793" expanded="true" signature="648:707" ph="{...}" />
+                <marker date="1557475570793" expanded="true" signature="798:932" ph="{...}" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -191,7 +231,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/ParralaxBackground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/SmoothCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Planets/Blackhole.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BoatHealth.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -359,13 +403,21 @@
       <workItem from="1557321050851" duration="1912000" />
       <workItem from="1557391432884" duration="2387000" />
       <workItem from="1557397834234" duration="1494000" />
+<<<<<<< Updated upstream
       <workItem from="1557481758890" duration="387000" />
       <workItem from="1557485205632" duration="508000" />
+=======
+      <workItem from="1557481758890" duration="1072000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="88532000" />
+=======
+    <option name="totallyTimeSpent" value="88709000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +429,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+>>>>>>> Stashed changes
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -621,6 +677,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planets/VignetteIncrease.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -630,6 +687,27 @@
             <marker date="1557485688219" expanded="true" signature="159:420" ph="{...}" />
             <marker date="1557485688219" expanded="true" signature="283:339" ph="{...}" />
             <marker date="1557485688219" expanded="true" signature="397:418" ph="{...}" />
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/ScreenResolution.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Powerup/HealthPickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <marker date="1557475570793" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557475570793" expanded="true" signature="121:934" ph="{...}" />
+            <marker date="1557475570793" expanded="true" signature="403:445" ph="{...}" />
+            <marker date="1557475570793" expanded="true" signature="494:757" ph="{...}" />
+            <marker date="1557475570793" expanded="true" signature="546:751" ph="{...}" />
+            <marker date="1557475570793" expanded="true" signature="648:707" ph="{...}" />
+            <marker date="1557475570793" expanded="true" signature="798:932" ph="{...}" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
