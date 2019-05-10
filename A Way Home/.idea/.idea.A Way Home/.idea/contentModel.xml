@@ -213,6 +213,7 @@
             <e p="BoatMovement.cs" t="Include" />
           </e>
           <e p="Planets" t="Include">
+            <e p="AsteriodSpawner.cs" t="Include" />
             <e p="AsteroidDamage.cs" t="Include" />
             <e p="Blackhole.cs" t="Include" />
             <e p="PlanetDamage.cs" t="Include" />
@@ -221,11 +222,11 @@
           </e>
           <e p="Player" t="Include">
             <e p="BoatHealth.cs" t="Include" />
+            <e p="VoiceLine.cs" t="Include" />
           </e>
           <e p="Powerup" t="Include">
             <e p="HealthPickup.cs" t="Include" />
           </e>
-          <e p="VoiceLine.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
@@ -235,7 +236,7 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\hbahemia\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\hbahemia\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
+    <e p="C:\Users\hbahemia\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hbahemia\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
   </component>
 </project>

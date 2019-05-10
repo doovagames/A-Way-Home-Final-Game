@@ -5,7 +5,7 @@ using UnityEngine;
 public class AddForce : MonoBehaviour
 {
     public Vector3 _forceAmount;
-    [SerializeField] private Rigidbody rigidbody;
+    private Rigidbody rigidbody;
     
     // Start is called before the first frame update
     void Start()

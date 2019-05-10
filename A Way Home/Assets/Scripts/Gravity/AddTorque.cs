@@ -5,7 +5,7 @@ using UnityEngine;
 public class AddTorque : MonoBehaviour
 {
     public Vector3 _torqueAmount;
-    [SerializeField] private Rigidbody _rigidbody;
+    private Rigidbody _rigidbody;
     
     // Start is called before the first frame update
     void Start()

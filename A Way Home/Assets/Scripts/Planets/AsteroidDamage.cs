@@ -11,7 +11,6 @@ public class AsteroidDamage : MonoBehaviour
         {
             var damage = Mathf.Round(Random.Range(1f, 10f));
             col.gameObject.GetComponentInParent<BoatHealth>().Damage(damage);
-            
         }
     }
 }
