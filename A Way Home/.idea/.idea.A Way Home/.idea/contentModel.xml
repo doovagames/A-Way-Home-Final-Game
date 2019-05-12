@@ -228,6 +228,7 @@
           </e>
           <e p="Player" t="Include">
             <e p="BoatHealth.cs" t="Include" />
+            <e p="Pause.cs" t="Include" />
             <e p="VoiceLine.cs" t="Include" />
           </e>
           <e p="Powerup" t="Include">

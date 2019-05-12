@@ -13,12 +13,14 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private AudioSource _source; // Referencing Audio Source
     
     [SerializeField] private Animator _anim;
+    [SerializeField] private ParticleSystem _movement;
 
     // Start is called before the first frame update
     void Start()
     {
         _rbody = GetComponent<Rigidbody>();
         _anim = GetComponentInChildren<Animator>();
+        _movement.Stop();
     }
 
     // Update is called once per frame
@@ -40,6 +42,7 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
+                _movement.Play();
                 directionalForce = -5f;
                 forwardForce = 5;
             }
@@ -48,6 +51,7 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("RightRow");
                 _source.Play();
+                _movement.Play();
                 directionalForce = 5f;
                 forwardForce = 5;
             }
@@ -61,6 +65,7 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
+                _movement.Play();
                 directionalForce = -1f;
                 forwardForce = 1;
             }
@@ -69,6 +74,7 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("RightRow");
                 _source.Play();
+                _movement.Play();
                 directionalForce = 1f;
                 forwardForce = 1;
             }
