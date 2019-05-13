@@ -22,8 +22,9 @@ public class VignetteIncrease : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             var newSettings = Processing.vignette.settings;
-            newSettings.intensity = 15 * Time.deltaTime;
+            newSettings.intensity = 50 * Time.deltaTime;
             Processing.vignette.settings = newSettings;
+            Teleport();
         }
     }
 
@@ -35,5 +36,20 @@ public class VignetteIncrease : MonoBehaviour
             newSettings.intensity = 0 * Time.deltaTime;
             Processing.vignette.settings = newSettings;      
         }
+    }
+
+    void Teleport()
+    {
+        if (Processing.vignette.settings.intensity == 1)
+        {
+            Invoke("ResetPosition",10f);
+            print("teleport");
+        }
+    }
+
+    void ResetPosition()
+    {
+        _playerTransform.position = new Vector3(550, _playerTransform.position.y, -1914);
+        print("reset position");
     }
 }

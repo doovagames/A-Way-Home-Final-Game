@@ -10,13 +10,12 @@ public class Blackhole : MonoBehaviour
 
     public ParticleSystem _Blackhole;
     
-    
     [SerializeField] private float _gravityPull = .78f;
     public static float _mGravityRadius = 1f;
 
     private void Start()
     {
-        _Blackhole.Stop();
+        _Blackhole.Play();
     }
 
     private void Awake()
@@ -32,7 +31,6 @@ public class Blackhole : MonoBehaviour
     
     void OnTriggerStay(Collider other)
     {
-        _Blackhole.Play();
         _gravityPull += Time.deltaTime * timeMultiplier;
         
         if(other.attachedRigidbody)
@@ -43,7 +41,7 @@ public class Blackhole : MonoBehaviour
             
             if (other.gameObject.tag == "Player")
             {
-                var damage = Mathf.Round(Random.Range(1f, 40f)); // Deal random range of damage whilst in collider
+                var damage = Mathf.Round(Random.Range(10f, 40f)); // Deal random range of damage whilst in collider
                 other.gameObject.GetComponentInParent<BoatHealth>().Damage(damage); // Referencing BoatHealth so that boat can be damaged.
             }
         }

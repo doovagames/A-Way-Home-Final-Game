@@ -6,22 +6,33 @@ public class Pause : MonoBehaviour
 {
 
     [SerializeField] private Canvas _pauseMenu;
+    private bool ispausegame;
     
     // Start is called before the first frame update
     void Start()
     {
         _pauseMenu.enabled = false;
+        ispausegame = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && ispausegame == false)
+        {
+            ispausegame = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && ispausegame)
+        {
+            ispausegame = false;
+        }
+
+        if (ispausegame)
         {
             PauseGame();
-
         }
-        else
+
+        if (ispausegame == false)
         {
             ContinueGame();
         }

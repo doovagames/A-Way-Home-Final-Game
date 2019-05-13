@@ -7,6 +7,7 @@ public class LoadScene : MonoBehaviour
 
     public void LoadByIndex(int sceneIndex)  //This will load the specific scene that the scene is on.
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneIndex); //Load scene number.
     }
 
