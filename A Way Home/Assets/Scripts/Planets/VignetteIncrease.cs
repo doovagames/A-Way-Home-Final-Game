@@ -1,11 +1,49 @@
 ﻿using UnityEngine;
 using UnityEngine.PostProcessing;
 
-
-public class VignetteIncrease : MonoBehaviour
+namespace Planets
 {
-    [SerializeField] private BoatHealth _boatHealth;
+    public class VignetteIncrease : MonoBehaviour
+    {
+        [SerializeField] private PostProcessingProfile _postProcessingProfile;
+        [SerializeField] private Transform _boat;
+        [SerializeField] private float _vignetteIntensity;
+        [SerializeField] private float _distanceThreshold;
+        [SerializeField] private float _teleportDelay;
+        private float _startXPosition;
+
+        private void Start()
+        {
+            _startXPosition = _boat.position.x;
+        }
+
+        private void SetIntensity(float newIntensity)
+        {
+            var settings = _postProcessingProfile.vignette.settings;
+            settings.intensity = newIntensity;
+            _postProcessingProfile.vignette.settings = settings;
+        }
+
+        private void Teleport()
+        {
+            var newPosition = new Vector3(_startXPosition, _boat.position.y, _boat.position.z);
+            _boat.position = newPosition;
+        }
     
+        private void Update()
+        {
+            var difference = _boat.position.x - _startXPosition;
+            difference = Mathf.Abs(difference);
+            SetIntensity(difference * _vignetteIntensity);
+            print(difference);
+
+            if (difference > _distanceThreshold)
+            {
+                Invoke(nameof(Teleport), _teleportDelay);
+            }
+        }
+
+        /*
     [SerializeField] private Transform _playerTransform;
     public PostProcessingProfile Processing;
     
@@ -51,5 +89,7 @@ public class VignetteIncrease : MonoBehaviour
     {
         _playerTransform.position = new Vector3(550, _playerTransform.position.y, -1914);
         print("reset position");
+    }
+    */
     }
 }

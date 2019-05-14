@@ -4,51 +4,22 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-
     [SerializeField] private Canvas _pauseMenu;
-    private bool ispausegame;
-    
-    // Start is called before the first frame update
-    void Start()
+    private bool _isPaused;
+
+    private void Update()
     {
-        _pauseMenu.enabled = false;
-        ispausegame = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) && ispausegame == false)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ispausegame = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Escape) && ispausegame)
-        {
-            ispausegame = false;
-        }
-
-        if (ispausegame)
-        {
-            PauseGame();
-        }
-
-        if (ispausegame == false)
-        {
-            ContinueGame();
+            TogglePause();
         }
     }
 
-    void ContinueGame()
+    private void TogglePause()
     {
-        Time.timeScale = 1;
-        Cursor.visible = false;
-        _pauseMenu.enabled = false;
-    }
-
-    void PauseGame()
-    {
-        Time.timeScale = 0;
+        _isPaused = !_isPaused;
+        Time.timeScale = _isPaused ? 0 : 1;
+        _pauseMenu.enabled = _isPaused;
         Cursor.visible = true;
-        _pauseMenu.enabled = true;
     }
 }

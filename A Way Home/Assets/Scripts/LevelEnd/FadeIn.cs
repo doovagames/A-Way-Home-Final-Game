@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FadeIn : MonoBehaviour
 {
@@ -12,6 +13,15 @@ public class FadeIn : MonoBehaviour
         {
             print("oof");
             _animator.SetTrigger("Fade In");
+            Invoke ("EndGame", 20f);
+        }
+    }
+
+    void EndGame()
+    {
+        if (_animator.enabled == true)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
