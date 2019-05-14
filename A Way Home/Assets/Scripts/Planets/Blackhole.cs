@@ -6,16 +6,19 @@ using UnityEngine;
 public class Blackhole : MonoBehaviour
 {
     [SerializeField] private float timeMultiplier;
-    public GameObject _blackhole; // The blackhole game obj that the boat will orbit around when in it.
-
-    public ParticleSystem _Blackhole;
     
+    public GameObject _blackhole; // The blackhole game obj that the boat will orbit around when in it.
+    public ParticleSystem _Blackhole;
+
+    [SerializeField] private AudioSource _blackHole; 
     [SerializeField] private float _gravityPull = .78f;
+    
     public static float _mGravityRadius = 1f;
 
     private void Start()
     {
         _Blackhole.Play();
+        _blackHole = gameObject.GetComponent<AudioSource>();
     }
 
     private void Awake()
@@ -33,17 +36,20 @@ public class Blackhole : MonoBehaviour
     {
         _gravityPull += Time.deltaTime * timeMultiplier;
         
-        if(other.attachedRigidbody)
+        if(other.gameObject.CompareTag("Player"))
         {
             float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / _mGravityRadius;
             other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.smoothDeltaTime);
             Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
             
-            if (other.gameObject.tag == "Player")
+            
+            if (other.gameObject.CompareTag("Player"))
             {
                 var damage = Mathf.Round(Random.Range(10f, 40f)); // Deal random range of damage whilst in collider
                 other.gameObject.GetComponentInParent<BoatHealth>().Damage(damage); // Referencing BoatHealth so that boat can be damaged.
             }
+            
+            _blackHole.Play();
         }
     }
 }
