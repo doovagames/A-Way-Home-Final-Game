@@ -1,22 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
     [SerializeField] private Canvas _pauseMenu;
     private bool _isPaused;
+    private bool _hasReleased;
+    
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Math.Abs(Input.GetAxisRaw("Cancel")) >= 0.9 && _hasReleased)
         {
+            _hasReleased = false;
             TogglePause();
         }
-
-        else
+        else if (Math.Abs(Input.GetAxisRaw("Cancel")) <= 0.1)
         {
-            Cursor.visible = false;
+            _hasReleased = true;
         }
     }
 
@@ -25,6 +26,6 @@ public class Pause : MonoBehaviour
         _isPaused = !_isPaused;
         Time.timeScale = _isPaused ? 0 : 1;
         _pauseMenu.enabled = _isPaused;
-        Cursor.visible = true;
+        Cursor.visible = !Cursor.visible;
     }
 }
