@@ -35,7 +35,6 @@ namespace Planets
             var difference = _boat.position.x - _startXPosition;
             difference = Mathf.Abs(difference);
             SetIntensity(difference * _vignetteIntensity);
-            print(difference);
 
             if (difference > _distanceThreshold)
             {

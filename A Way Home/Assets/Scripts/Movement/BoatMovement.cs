@@ -21,6 +21,8 @@ public class BoatMovement : MonoBehaviour
         _rbody = GetComponent<Rigidbody>();
         _anim = GetComponentInChildren<Animator>();
         _movement.Stop();
+
+        Cursor.visible = false;
     }
 
     // Update is called once per frame

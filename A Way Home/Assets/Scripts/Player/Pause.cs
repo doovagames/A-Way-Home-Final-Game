@@ -13,6 +13,11 @@ public class Pause : MonoBehaviour
         {
             TogglePause();
         }
+
+        else
+        {
+            Cursor.visible = false;
+        }
     }
 
     private void TogglePause()

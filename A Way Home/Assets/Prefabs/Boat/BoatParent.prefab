@@ -4861,7 +4861,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4881,7 +4881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressInterval: 1.75
   turnSpeed: 60
-  acceleration: 2000
+  acceleration: 1500
   _rbody: {fileID: 3959458301968427455}
   _source: {fileID: 0}
   _anim: {fileID: 7330413973331819259}
@@ -14425,7 +14425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3506028085297452049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0507}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 835209443675225187}
@@ -14443,7 +14443,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.9716981, g: 0.7650786, b: 0, a: 1}
   m_Intensity: 2
-  m_Range: 0.2
+  m_Range: 0.4
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -14512,6 +14512,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 264779363}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: f57a2077d3ffb6b46a815d19c6502b70,
+        type: 3}
+      propertyPath: m_Name
+      value: Idle
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f57a2077d3ffb6b46a815d19c6502b70,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14566,11 +14571,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: f57a2077d3ffb6b46a815d19c6502b70,
-        type: 3}
-      propertyPath: m_Name
-      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: f57a2077d3ffb6b46a815d19c6502b70,
         type: 3}
@@ -15219,6 +15219,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418402814363589307}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 66fc6ae4db38777408daffa607dd1e47,
+        type: 3}
+      propertyPath: m_Name
+      value: Boat
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66fc6ae4db38777408daffa607dd1e47,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 66fc6ae4db38777408daffa607dd1e47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15279,16 +15289,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.85979325
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 66fc6ae4db38777408daffa607dd1e47,
-        type: 3}
-      propertyPath: m_Name
-      value: Boat
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 66fc6ae4db38777408daffa607dd1e47,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66fc6ae4db38777408daffa607dd1e47, type: 3}
 --- !u!4 &806389980321996642 stripped
@@ -15310,6 +15310,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418402814363589307}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 42a0ba01eeaf64e46a9298020a1f9854,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42a0ba01eeaf64e46a9298020a1f9854,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 42a0ba01eeaf64e46a9298020a1f9854,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15364,16 +15374,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 42a0ba01eeaf64e46a9298020a1f9854,
-        type: 3}
-      propertyPath: m_Name
-      value: Lantern
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 42a0ba01eeaf64e46a9298020a1f9854,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42a0ba01eeaf64e46a9298020a1f9854, type: 3}
