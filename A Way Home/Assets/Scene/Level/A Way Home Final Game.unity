@@ -5434,9 +5434,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sensitivity: {x: 1, y: 1}
-  _zoomBounds: {x: 3, y: 8}
-  _boat: {fileID: 0}
-  _cameraZoom: 4
+  _zoomBounds: {x: 5, y: 8}
+  _boat: {fileID: 2079895584368507647}
+  _cameraZoom: 5
   _zoomSensitivity: 2
   _pitchBounds: {x: -20, y: 40}
 --- !u!81 &1322460727
@@ -8315,7 +8315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 1933964968}
-  _pauseCooldown: 0.1
 --- !u!1001 &1934032448
 PrefabInstance:
   m_ObjectHideFlags: 0
