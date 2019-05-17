@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        Cursor.visible = true;
+        
         _boat.enabled = false;
         _cameraLook.enabled = false;
         
@@ -62,5 +64,6 @@ public class DialogueManager : MonoBehaviour
         _animator.SetBool("IsOpen", false);
         _boat.enabled = true;
         _cameraLook.enabled = true;
+        Cursor.visible = false;
     }
 }

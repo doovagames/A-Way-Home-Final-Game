@@ -59,26 +59,26 @@ public class BoatMovement : MonoBehaviour
             }
         }
         //Controls for Controller Input
-        else if (Input.GetAxisRaw("Xbox L2") > 0.8 || Input.GetAxisRaw("Xbox R2") > 0.8 && _timesSincePress > pressInterval)
+        else if (Mathf.Abs(Input.GetAxis("Xbox L2")) > 0.8 || Mathf.Abs(Input.GetAxis("Xbox R2")) > 0.8 && _timesSincePress > pressInterval)
         {
             _timesSincePress = 0;
 
-            if (Input.GetAxisRaw("Xbox L2") > 0.8)
+            if (Mathf.Abs(Input.GetAxis("Xbox L2")) > 0.8)
             {
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
                 _movement.Play();
                 directionalForce = -5f;
-                forwardForce = 1;
+                forwardForce = 5;
             }
 
-            if (Input.GetAxisRaw("Xbox R2") > 0.8)
+            if (Mathf.Abs(Input.GetAxis("Xbox R2")) > 0.8)
             {
                 _anim.SetTrigger("RightRow");
                 _source.Play();
                 _movement.Play();
                 directionalForce = 5f;
-                forwardForce = 1;
+                forwardForce = 5;
             }
         }
         
