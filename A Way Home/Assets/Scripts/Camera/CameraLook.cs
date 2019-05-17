@@ -23,7 +23,7 @@ namespace Camera
             var v = (-Input.GetAxis("Mouse Y") + Input.GetAxis("Xbox Y Look")) * _sensitivity.y;
             var movement = new Vector3(-v, h, 0);
             _eulerAngle += movement;
-            print(_eulerAngle);
+
             // Clamp the pitch.
             var pitch = Mathf.Clamp(_eulerAngle.x, _pitchBounds.x, _pitchBounds.y);
             _eulerAngle.x = pitch;

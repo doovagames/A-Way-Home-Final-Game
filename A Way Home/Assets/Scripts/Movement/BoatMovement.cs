@@ -68,7 +68,7 @@ public class BoatMovement : MonoBehaviour
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
                 _movement.Play();
-                directionalForce = -1f;
+                directionalForce = -5f;
                 forwardForce = 1;
             }
 
@@ -77,7 +77,7 @@ public class BoatMovement : MonoBehaviour
                 _anim.SetTrigger("RightRow");
                 _source.Play();
                 _movement.Play();
-                directionalForce = 1f;
+                directionalForce = 5f;
                 forwardForce = 1;
             }
         }
