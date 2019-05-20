@@ -196,8 +196,6 @@
           </e>
           <e p="Game" t="Include">
             <e p="Dialogue.cs" t="Include" />
-            <e p="DialogueManager.cs" t="Include" />
-            <e p="DialogueTrigger.cs" t="Include" />
           </e>
           <e p="Gravity" t="Include">
             <e p="AddForce.cs" t="Include" />
@@ -249,7 +247,7 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\hbahemia\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\hbahemia\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
+    <e p="C:\Users\hbahemia\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hbahemia\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_A Way Home.-264951774.00" t="ExcludeRecursive" />
   </component>
 </project>
