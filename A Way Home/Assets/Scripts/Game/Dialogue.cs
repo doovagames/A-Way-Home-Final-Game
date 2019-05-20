@@ -64,6 +64,9 @@ public class Dialogue : MonoBehaviour
          {
              _textDisplay.text = "";
              _continueButton.SetActive(false);
+             _boat.enabled = true;
+             _camera.enabled = true;
+             Cursor.visible = false;
          }
      }
 }

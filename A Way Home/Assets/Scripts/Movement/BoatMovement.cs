@@ -59,7 +59,7 @@ public class BoatMovement : MonoBehaviour
             }
         }
         //Controls for Controller Input
-        else if (Mathf.Abs(Input.GetAxis("Xbox L2")) > 0.8 || Mathf.Abs(Input.GetAxis("Xbox R2")) > 0.8 && _timesSincePress > pressInterval)
+        else if ((Mathf.Abs(Input.GetAxis("Xbox L2")) > 0.8 || Mathf.Abs(Input.GetAxis("Xbox R2")) > 0.8) && _timesSincePress > pressInterval)
         {
             _timesSincePress = 0;
 
