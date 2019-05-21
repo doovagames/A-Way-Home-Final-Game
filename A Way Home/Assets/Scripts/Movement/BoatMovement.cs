@@ -15,6 +15,7 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private Animator _anim;
     [SerializeField] private ParticleSystem _movement;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +49,7 @@ public class BoatMovement : MonoBehaviour
                 directionalForce = -5f;
                 forwardForce = 5;
             }
-
+            
             if (Input.GetKey(KeyCode.Mouse1))
             {
                 _anim.SetTrigger("RightRow");
@@ -80,6 +81,7 @@ public class BoatMovement : MonoBehaviour
                 directionalForce = 5f;
                 forwardForce = 5;
             }
+            
         }
         
         _rbody.AddForce(transform.forward * forwardForce * acceleration * Time.deltaTime);

@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using System.Collections.Generic;
 using Camera;
 
 public class Dialogue : MonoBehaviour
 {
 
+    [SerializeField] private Collider[] _voiceColliders;
     [SerializeField] private Text _textDisplay;
     [SerializeField] private int _index;
     [SerializeField] private float _typingSpeed;
@@ -39,7 +39,7 @@ public class Dialogue : MonoBehaviour
          }
      }
 
-     IEnumerator Type()
+    private IEnumerator Type()
      {
          foreach (var letter in _Sentences[_index].ToCharArray())
          {
@@ -67,6 +67,11 @@ public class Dialogue : MonoBehaviour
              _boat.enabled = true;
              _camera.enabled = true;
              Cursor.visible = false;
+             
+             foreach (var voice in _voiceColliders)
+             {
+                 voice.enabled = true;
+             }
          }
      }
 }

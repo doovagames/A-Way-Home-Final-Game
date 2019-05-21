@@ -11,6 +11,12 @@ namespace Camera
         [SerializeField] private float _cameraZoom, _zoomSensitivity;
         [SerializeField] private Vector2 _pitchBounds;
         private Vector3 _eulerAngle;
+        [SerializeField] private ParticleSystem _movement;
+
+        private void Start()
+        {
+            _movement.Play();
+        }
 
         private void Update()
         {
