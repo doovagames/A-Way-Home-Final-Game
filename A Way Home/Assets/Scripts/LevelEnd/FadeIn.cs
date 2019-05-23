@@ -21,7 +21,7 @@ public class FadeIn : MonoBehaviour
     {
         if (_animator.enabled == true)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 }

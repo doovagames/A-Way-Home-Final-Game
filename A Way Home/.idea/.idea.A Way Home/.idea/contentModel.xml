@@ -197,6 +197,7 @@
             <e p="SmoothCameraFollow.cs" t="Include" />
           </e>
           <e p="Game" t="Include">
+            <e p="Credits.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
           </e>
           <e p="Gravity" t="Include">

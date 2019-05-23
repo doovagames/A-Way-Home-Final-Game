@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Level/A Way Home Final Game.unity
     guid: fd700c726e060144c9320b2398e35ffc
+  - enabled: 1
+    path: Assets/Scene/Credits/Credits.unity
+    guid: 29c157d934052d040b0168dd2019ec14
   m_configObjects: {}
