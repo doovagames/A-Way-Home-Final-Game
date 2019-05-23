@@ -5661,7 +5661,7 @@ MonoBehaviour:
   _continueButton: {fileID: 152702645}
   _textDisplayAnimator: {fileID: 507612744}
   _boat: {fileID: 959395442}
-  _camera: {fileID: 1322460726}
+  _camera: {fileID: 0}
   _Sentences:
   - 'Fisherman: I am the Fisherman, I will tell you how to play the game.'
   - 'Fisherman: Your aim is to get to the end and find home, but be careful as there
@@ -6343,9 +6343,8 @@ GameObject:
   - component: {fileID: 1322460725}
   - component: {fileID: 1322460728}
   - component: {fileID: 1322460727}
-  - component: {fileID: 1322460726}
   - component: {fileID: 1322460729}
-  - component: {fileID: 1322460730}
+  - component: {fileID: 1322460726}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -6376,16 +6375,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322460724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c6b3acd9bf20284d8715f6437f7a4a9, type: 3}
+  m_Script: {fileID: 11500000, guid: d8e8070b03ec60c458e00a03dc4c29d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sensitivity: {x: 1, y: 1}
-  _zoomBounds: {x: 5, y: 8}
-  _boat: {fileID: 2079895584368507647}
-  _cameraZoom: 5
-  _zoomSensitivity: 2
-  _pitchBounds: {x: -20, y: 40}
-  _movement: {fileID: 1809940543}
+  _camera: {fileID: 1322460728}
 --- !u!81 &1322460727
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6450,19 +6443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 5d5ac68491031584ebfa21ea6d6e68f0, type: 2}
---- !u!114 &1322460730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322460724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956b8ebd1b259b24ca20fdc8093323bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _slider: {fileID: 0}
 --- !u!1 &1346905372
 GameObject:
   m_ObjectHideFlags: 0
@@ -9554,12 +9534,6 @@ Transform:
   m_Father: {fileID: 188725286}
   m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &1809940543 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1379664191202280748, guid: c7bf68d19d11a4d4988206e7c5fc58e1,
-    type: 3}
-  m_PrefabInstance: {fileID: 5641439838467217878}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1816792817
 GameObject:
   m_ObjectHideFlags: 0

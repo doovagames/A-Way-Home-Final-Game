@@ -7,16 +7,15 @@ public class FovManager : MonoBehaviour
 
     private void Start()
     {
-        var cam = GetComponent<UnityEngine.Camera>();
-        if (cam != null)
+        var camera = GetComponent<UnityEngine.Camera>();
+        if (camera != null)
         {
-            cam.fov = GetFov();
+            camera.fieldOfView = GetFov();
         }
     }
 
     public void UpdateFov()
     {
-        
         PlayerPrefs.SetInt("FOV", (int)_slider.value);
     }
 

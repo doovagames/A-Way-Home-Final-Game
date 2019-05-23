@@ -192,6 +192,7 @@
           <e p="Camera" t="Include">
             <e p="CameraAnim.cs" t="Include" />
             <e p="CameraLook.cs" t="Include" />
+            <e p="FovCameraManager.cs" t="Include" />
             <e p="FovManager.cs" t="Include" />
             <e p="SmoothCameraFollow.cs" t="Include" />
           </e>
