@@ -54,7 +54,29 @@ public class Dialogue : MonoBehaviour
         _textDisplayAnimator.SetTrigger("Change");
         _continueButton.SetActive(false);
 
-        if (Input.GetAxis("Continue") > 0.8 || Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetAxis("Continue") > 0.8)
+        {
+            if (_index < _Sentences.Length - 1)
+            {
+                _index++;
+                _textDisplay.text = "";
+                StartCoroutine(Type());
+            }
+            else
+            {
+                _textDisplay.text = "";
+                _continueButton.SetActive(false);
+                _boat.enabled = true;
+                _camera.enabled = true;
+                Cursor.visible = false;
+
+                foreach (var voice in _voiceColliders)
+                {
+                    voice.enabled = true;
+                }
+            }
+        }
+        else
         {
             if (_index < _Sentences.Length - 1)
             {
