@@ -782,7 +782,7 @@ MonoBehaviour:
   _spawnSpread: {x: 2500, y: 20, z: 6000}
   _spawnRate: 0
   _lifeTime: 100
-  _maxAsteroids: 200
+  _maxAsteroids: 300
   _asteroids: []
 --- !u!4 &197478600 stripped
 Transform:
