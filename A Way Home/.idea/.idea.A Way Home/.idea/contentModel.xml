@@ -198,6 +198,7 @@
           </e>
           <e p="Game" t="Include">
             <e p="Credits.cs" t="Include" />
+            <e p="CursorManager.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
           </e>
           <e p="Gravity" t="Include">
@@ -230,6 +231,7 @@
             <e p="AsteriodSpawner.cs" t="Include" />
             <e p="AsteroidDamage.cs" t="Include" />
             <e p="Blackhole.cs" t="Include" />
+            <e p="NewAsteroidSpawner.cs" t="Include" />
             <e p="PlanetDamage.cs" t="Include" />
             <e p="RotatePlanet.cs" t="Include" />
             <e p="VignetteIncrease.cs" t="Include" />

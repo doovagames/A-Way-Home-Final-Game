@@ -22,8 +22,6 @@ public class BoatMovement : MonoBehaviour
         _rbody = GetComponent<Rigidbody>();
         _anim = GetComponentInChildren<Animator>();
         _movement.Stop();
-
-        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -46,8 +44,8 @@ public class BoatMovement : MonoBehaviour
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
                 _movement.Play();
-                directionalForce = -5f;
-                forwardForce = 5;
+                directionalForce = -4f;
+                forwardForce = 4;
             }
             
             if (Input.GetKey(KeyCode.Mouse1))
@@ -55,8 +53,8 @@ public class BoatMovement : MonoBehaviour
                 _anim.SetTrigger("RightRow");
                 _source.Play();
                 _movement.Play();
-                directionalForce = 5f;
-                forwardForce = 5;
+                directionalForce = 4f;
+                forwardForce = 4;
             }
         }
         //Controls for Controller Input
@@ -69,8 +67,8 @@ public class BoatMovement : MonoBehaviour
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
                 _movement.Play();
-                directionalForce = -5f;
-                forwardForce = 5;
+                directionalForce = -4f;
+                forwardForce = 4;
             }
 
             if (Mathf.Abs(Input.GetAxis("Xbox R2")) > 0.8)
@@ -78,8 +76,8 @@ public class BoatMovement : MonoBehaviour
                 _anim.SetTrigger("RightRow");
                 _source.Play();
                 _movement.Play();
-                directionalForce = 5f;
-                forwardForce = 5;
+                directionalForce = 4f;
+                forwardForce = 4;
             }
             
         }

@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using Camera;
+using Planets;
 
 public class Dialogue : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class Dialogue : MonoBehaviour
 
     [SerializeField] private BoatMovement _boat;
     [SerializeField] private CameraLook _camera;
+    [SerializeField] private CursorManager _cursor;
+
+    [SerializeField] private NewAsteroidSpawner _spawner;
     
     [TextArea(3, 10)]
      public string[] _Sentences;
@@ -29,6 +33,8 @@ public class Dialogue : MonoBehaviour
          _boat.enabled = false;
          _camera.enabled = false;
          Cursor.visible = true;
+         _cursor.enabled = false;
+         _spawner.enabled = false;
      }
 
      private void Update()
@@ -54,6 +60,7 @@ public class Dialogue : MonoBehaviour
         _textDisplayAnimator.SetTrigger("Change");
         _continueButton.SetActive(false);
 
+        
         if (Input.GetAxis("Continue") > 0.8)
         {
             if (_index < _Sentences.Length - 1)
@@ -69,6 +76,8 @@ public class Dialogue : MonoBehaviour
                 _boat.enabled = true;
                 _camera.enabled = true;
                 Cursor.visible = false;
+                _cursor.enabled = true;
+                _spawner.enabled = true;
 
                 foreach (var voice in _voiceColliders)
                 {
@@ -91,6 +100,8 @@ public class Dialogue : MonoBehaviour
                 _boat.enabled = true;
                 _camera.enabled = true;
                 Cursor.visible = false;
+                _cursor.enabled = true;
+                _spawner.enabled = true;
 
                 foreach (var voice in _voiceColliders)
                 {

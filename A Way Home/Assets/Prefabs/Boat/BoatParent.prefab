@@ -4882,8 +4882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressInterval: 2
-  turnSpeed: 45
-  acceleration: 500
+  turnSpeed: 30
+  acceleration: 400
   _rbody: {fileID: 3959458301968427455}
   _source: {fileID: 0}
   _anim: {fileID: 7330413973331819259}
