@@ -32,7 +32,6 @@ public class Dialogue : MonoBehaviour
          StartCoroutine(Type());
          _boat.enabled = false;
          _camera.enabled = false;
-         Cursor.visible = true;
          _cursor.enabled = false;
          _spawner.enabled = false;
      }
@@ -75,7 +74,6 @@ public class Dialogue : MonoBehaviour
                 _continueButton.SetActive(false);
                 _boat.enabled = true;
                 _camera.enabled = true;
-                Cursor.visible = false;
                 _cursor.enabled = true;
                 _spawner.enabled = true;
 
@@ -99,7 +97,6 @@ public class Dialogue : MonoBehaviour
                 _continueButton.SetActive(false);
                 _boat.enabled = true;
                 _camera.enabled = true;
-                Cursor.visible = false;
                 _cursor.enabled = true;
                 _spawner.enabled = true;
 
