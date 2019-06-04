@@ -7,15 +7,25 @@ public class Credits : MonoBehaviour
 {
 
     [SerializeField] private Animator _credits;
+    [SerializeField] private Animator _whiteFade;
+    [SerializeField] private GameObject _FadeObj;
 
     private void Start()
     {
-        Invoke("credits", 30f);
+        Invoke("Credit", 30f);
     }
 
-    void credits ()
+    private void Update()
     {
-        if (_credits.enabled == true)
+        if (!_whiteFade.GetCurrentAnimatorStateInfo(0).IsName("FadeOut"))
+        {
+            _FadeObj.SetActive(false);
+        }
+    }
+
+    void Credit ()
+    {
+        if (_credits.enabled)
         {
             SceneManager.LoadScene(0);
         }
