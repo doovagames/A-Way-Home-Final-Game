@@ -15,6 +15,7 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private Animator _anim;
     [SerializeField] private ParticleSystem _leftRow;
     [SerializeField] private ParticleSystem _rightRow;
+    [SerializeField] private ParticleSystem _backBoatSplashVFX;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class BoatMovement : MonoBehaviour
         _anim = GetComponentInChildren<Animator>();
         _leftRow.Stop();
         _rightRow.Stop();
+        _backBoatSplashVFX.Stop();
     }
 
     // Update is called once per frame
@@ -45,7 +47,8 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
-                _leftRow.Play();
+                _backBoatSplashVFX.Play();
+                Invoke("LeftRow", .5f);
                 directionalForce = -4f;
                 forwardForce = 4;
             }
@@ -54,7 +57,8 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("RightRow");
                 _source.Play();
-                _rightRow.Play();
+                Invoke("RightRow", .5f);
+                _backBoatSplashVFX.Play();
                 directionalForce = 4f;
                 forwardForce = 4;
             }
@@ -68,7 +72,8 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("LeftRow");
                 _source.Play();
-                _leftRow.Play();
+                Invoke("LeftRow", .5f);
+                _backBoatSplashVFX.Play();
                 directionalForce = -4f;
                 forwardForce = 4;
             }
@@ -77,7 +82,8 @@ public class BoatMovement : MonoBehaviour
             {
                 _anim.SetTrigger("RightRow");
                 _source.Play();
-                _rightRow.Play();
+                Invoke("RightRow", .5f);
+                _backBoatSplashVFX.Play();
                 directionalForce = 4f;
                 forwardForce = 4;
             }
@@ -87,5 +93,15 @@ public class BoatMovement : MonoBehaviour
         _rbody.AddForce(transform.forward * forwardForce * acceleration * Time.deltaTime);
         //rbody.transform.Rotate(new Vector3(0,directionalForce * turnSpeed,0));
         _rbody.AddTorque(0f, directionalForce * turnSpeed * Time.deltaTime, 0f);
+    }
+
+    void LeftRow()
+    {
+        _leftRow.Play();
+    }
+    
+    void RightRow()
+    {
+        _rightRow.Play();
     }
 }
