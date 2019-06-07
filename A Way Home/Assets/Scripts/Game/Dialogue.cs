@@ -32,8 +32,8 @@ public class Dialogue : MonoBehaviour
          StartCoroutine(Type());
          _boat.enabled = false;
          _camera.enabled = false;
-         _cursor.enabled = false;
          _spawner.enabled = false;
+         _cursor.enabled = false;
      }
 
      private void Update()

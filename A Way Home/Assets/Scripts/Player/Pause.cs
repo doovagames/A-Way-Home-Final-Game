@@ -27,6 +27,6 @@ public class Pause : MonoBehaviour
         _isPaused = !_isPaused;
         Time.timeScale = _isPaused ? 0 : 1;
         _pauseMenu.enabled = _isPaused;
-       // _cursorManager.enabled = !_isPaused;
+        _cursorManager.enabled = !_isPaused;
     }
 }
