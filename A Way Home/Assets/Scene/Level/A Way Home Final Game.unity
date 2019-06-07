@@ -1178,7 +1178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1269120730060968, guid: 1a365141225c22e49a7bb976869b22a8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4103333903944158, guid: 1a365141225c22e49a7bb976869b22a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2962,6 +2962,7 @@ MonoBehaviour:
   _typingSpeed: 0.02
   _continueButton: {fileID: 152702645}
   _textDisplayAnimator: {fileID: 507612744}
+  _dialogue: {fileID: 1162096672}
   _boat: {fileID: 959395442}
   _camera: {fileID: 1322460730}
   _cursor: {fileID: 335076980}
