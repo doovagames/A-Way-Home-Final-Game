@@ -29,10 +29,7 @@ public class CursorManager : MonoBehaviour
         }
         else
         {
-            if (_dialogue.isActiveAndEnabled == false)
-            {
-                OnEnable();
-            }
+            return;
         }
     }
 }

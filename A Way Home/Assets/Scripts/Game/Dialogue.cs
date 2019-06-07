@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
 
     [SerializeField] private GameObject _continueButton;
     [SerializeField] private Animator _textDisplayAnimator;
+    [SerializeField] private GameObject _dialogue;
 
     private AudioSource _continueClick;
 
@@ -34,6 +35,7 @@ public class Dialogue : MonoBehaviour
          _camera.enabled = false;
          _spawner.enabled = false;
          _cursor.enabled = false;
+         _dialogue.SetActive(true);
      }
 
      private void Update()
@@ -76,6 +78,7 @@ public class Dialogue : MonoBehaviour
                 _camera.enabled = true;
                 _cursor.enabled = true;
                 _spawner.enabled = true;
+                _dialogue.SetActive(false);
 
                 foreach (var voice in _voiceColliders)
                 {
@@ -99,6 +102,7 @@ public class Dialogue : MonoBehaviour
                 _camera.enabled = true;
                 _cursor.enabled = true;
                 _spawner.enabled = true;
+                _dialogue.SetActive(false);
 
                 foreach (var voice in _voiceColliders)
                 {
